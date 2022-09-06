@@ -17,11 +17,12 @@ body{
     top: 50%;
     transform: translate(-50%,-50%);
     justify-content: center;
-    background-color: #4a5e5b;
+    background-color: #1d2b29;
     text-align: center;
     padding: 5rem;
     color: #e9e9e9;
     border-radius: 10px;
+    box-shadow: 0 0 20px 5px black;
 }
 .take button{
     padding: 0.5rem 4rem;
@@ -42,13 +43,15 @@ body{
     font-weight: 600;
     letter-spacing: 2px;
 }
+.take button:hover{
+    background-color: #217467;
+}
 input[type="text"]{
     font-size: 1rem;
     padding: 5px;
     text-align: center;
     color: #e9e9e9;
     border: none;
-    box-shadow: 0 0 5px #555555;
     outline: none;
     background-color: transparent;
     border-bottom: 2px solid #e9e9e9;
@@ -82,4 +85,7 @@ th{
     border-radius: 50%;
     box-shadow: 0 0 10px 3px black;
     cursor: pointer;
+}
+#close:hover{
+    background-color: rgb(207, 57, 57);
 }
