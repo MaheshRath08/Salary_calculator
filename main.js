@@ -28,9 +28,14 @@ let gs = document.getElementById("gs")
 let ded = document.getElementById("ded")
 let net = document.getElementById("net")
 
+//constions 
+isChecked = false
+
 form.addEventListener("submit", ()=>{
-    input.style.visibility = "hidden"
-    output.style.visibility = "visible"
+    if(isChecked){
+        input.style.visibility = "hidden"
+        output.style.visibility = "visible"
+    }
     //values
     let bs = Number(bsEl.value)
     let hra = Number(hraEl.value)
@@ -61,6 +66,7 @@ form.addEventListener("submit", ()=>{
     ded.textContent = dedV
     net.textContent = netV 
 
+    check(bs)
 })
 
 //close function
@@ -68,3 +74,13 @@ close.addEventListener("click" ,()=>{
     input.style.visibility = "visible"
     output.style.visibility = "hidden"
 })
+
+function check(e){
+    
+    if(isNaN(e) || e===0){
+        alert("Provide valid input!!")
+        isChecked = false
+    }else{
+        isChecked = true
+    }
+}
