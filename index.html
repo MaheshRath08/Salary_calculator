@@ -6,19 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salary distribution</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <section class="take">
-        <form action="#">
+        <form action="#" class="form">
             <label for="bs">Basic Salary(%): <input type="text" id="bs"></label>
             <label for="hra">House Rent Allowance(%): <input type="text" id="hra" value="40"></label>
             <label for="da">Dearness Allowance(%): <input type="text" id="da" value="20"></label>
             <label for="ca">Conveyance Allowance(₹): <input type="text" id="ca"></label>
             <label for="sa">Special Allowance(₹): <input type="text" id="sa"></label>
+            <label for="med">Medical Insurance(%): <input type="text" id="med" value="6"></label>
             <label for="epf">EPF(%): <input type="text" id="epf" value="12"></label>
-            <button id="sub">Submit</button>
+            <button id="sub" type="submit">Submit</button>
         </form>
+    </section>
+    <section class="output">
+        <table>
+            <tr><th colspan="2">Salary Details</th></tr>
+            <tr><td>Basic Salary</td><td id="bso"></td></tr>
+            <tr><td>HRA</td><td id="hrao"></td></tr>
+            <tr><td>da</td><td id="dao"></td></tr>
+            <tr><td>Conveyance Allowance</td><td id="cao"></td></tr>
+            <tr><td>special Allowance</td><td id="sao"></td></tr>
+            <tr><td>Gross Salary</td><td id="gs"></td></tr>
+            <tr><td>Medical Insurance</td><td id="medo"></td></tr>
+            <tr><td>EPF</td><td id="epfo"></td></tr>
+            <tr><td>Deduction</td><td id="ded"></td></tr>
+            <tr><td>Net Salary</td><td id="net"> </td></tr>
+        </table>
+        <button id="close">X</button>
     </section>
 </body>
 </html>

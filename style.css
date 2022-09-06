@@ -8,6 +8,9 @@ label{
     margin: 1rem 0;
     font-size: 1.3rem;
 }
+body{
+    background-color: ghostwhite;
+}
 .take{
     position: absolute;
     left: 50%;
@@ -49,4 +52,34 @@ input[type="text"]{
     outline: none;
     background-color: transparent;
     border-bottom: 2px solid #e9e9e9;
+}
+.output{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    visibility: hidden;
+}
+th,td{
+    border: 1px solid black;
+    padding: 0.3rem 5rem;
+    height: 2rem;
+    background-color: white;
+}
+th{
+    background-color: yellow;
+}
+#close{
+    position: absolute;
+    top: -2rem;
+    right: -2rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 2rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 3px black;
+    cursor: pointer;
 }
