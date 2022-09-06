@@ -1,0 +1,52 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label{
+    display: block;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+.take{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    background-color: #4a5e5b;
+    text-align: center;
+    padding: 5rem;
+    color: #e9e9e9;
+    border-radius: 10px;
+}
+.take button{
+    padding: 0.5rem 4rem;
+    display: block;
+    position: absolute;
+    bottom: 0.3rem;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #5cbbad;
+    color: white;
+    text-shadow: 0 1px 3px black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 2px black;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+input[type="text"]{
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+    color: #e9e9e9;
+    border: none;
+    box-shadow: 0 0 5px #555555;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid #e9e9e9;
+}
