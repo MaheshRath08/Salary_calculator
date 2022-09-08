@@ -78,7 +78,7 @@ th{
     top: -1rem;
     right: -1rem;
     padding: 0.2rem 0.8rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: red;
     color: white;
     border: none;
@@ -87,5 +87,6 @@ th{
     cursor: pointer;
 }
 #close:hover{
-    background-color: rgb(207, 57, 57);
+    background-color: rgb(119, 4, 4);
+    color: yellow;
 }
