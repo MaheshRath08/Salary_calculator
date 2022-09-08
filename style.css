@@ -75,9 +75,9 @@ th{
 }
 #close{
     position: absolute;
-    top: -2rem;
-    right: -2rem;
-    padding: 0.5rem 1.2rem;
+    top: -1rem;
+    right: -1rem;
+    padding: 0.2rem 0.8rem;
     font-size: 2rem;
     background-color: red;
     color: white;
